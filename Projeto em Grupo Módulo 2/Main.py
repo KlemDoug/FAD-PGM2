@@ -34,7 +34,7 @@ def Pesquisa():
                  'Questão 2', 'Questão 3', 'Questão 4', 'Data e Hora']
     gravador.writerow(cabecalho)
     data_e_hora_atuais = datetime.datetime.now()
-    data_e_hora_em_texto = data_e_hora_atuais.strftime('%d/%m/%Y,%H:%M')
+    data_e_hora_em_texto = data_e_hora_atuais.strftime('%d/%m/%Y, %H:%M')
 #######################################################################################
     while idade != '00':
         respostas_permitidas = ['S', 'N', 'NSR']
@@ -49,13 +49,15 @@ def Pesquisa():
             print('Você não digitou uma idade válida!')
             continue
         if idade == '00':
+            print(' ')
             print('...')
             sleep(3)
+            print(' ')
             print('Dados coletados com sucesso.')
             sleep(3)
-            print('\n')
+            print(' ')
             print('Obrigadx por colaborar com essa pesquisa!')
-            print('*'*100)
+            print(' ')
             break
         genero = input(
             'Com qual gênero você se identifica? (m/f/nsr)\n').upper()
@@ -116,6 +118,28 @@ def Pesquisa():
         gravador.writerow(dados)
         # Fechando o arquivo.
         arquivar.close()
+
+    with open("Projeto em Grupo Módulo 2/dadoscoletados.csv", mode='r', newline='', encoding='utf-8') as arquivo:
+        csv_reader = csv.DictReader(arquivo)
+        data = list(csv_reader)
+
+        # Define o tamanho de cada coluna.
+        col1 = 6
+        col2 = 8
+        col3 = 10
+        col4 = 10
+        col5 = 10
+        col6 = 10
+        col7 = 20
+
+        # Imprime o cabeçalho das colunas.
+        print('='*100)
+        print(f"{'Idade':<{col1}} {'Gênero':<{col2}} {'Questão 1':<{col3}} {'Questão 2':<{col4}} {'Questão 3':<{col5}} {'Questão 4':<{col6}} {'Data e Hora':<{col7}}")
+
+        # Imprime os dados em colunas.
+        for row in data:
+            print(f"{row['Idade']:<{col1}} {row['Gênero']:<{col2}} {row['Questão 1']:<{col3}} {row['Questão 2']:<{col4}} {row['Questão 3']:<{col5}} {row['Questão 4']:<{col6}} {row['Data e Hora']:<{col7}}")
+        print('='*100)
 
 
 Pesquisa()
