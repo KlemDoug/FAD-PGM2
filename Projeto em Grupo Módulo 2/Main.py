@@ -57,6 +57,7 @@ def Pesquisa():
             sleep(3)
             print(' ')
             print('Obrigadx por colaborar com essa pesquisa!')
+            sleep(3)
             print(' ')
             break
         genero = input(
@@ -134,10 +135,12 @@ def Pesquisa():
 
         # Imprime o cabeçalho das colunas.
         print('='*100)
+        sleep(1)
         print(f"{'Idade':<{col1}} {'Gênero':<{col2}} {'Questão1':<{col3}} {'Questão2':<{col4}} {'Questão3':<{col5}} {'Questão4':<{col6}} {'Data/Hora':<{col7}}")
 
         # Imprime os dados em colunas.
         for row in data:
+            sleep(1)
             print(f"{row['Idade']:<{col1}} {row['Gênero']:<{col2}} {row['Questão1']:<{col3}} {row['Questão2']:<{col4}} {row['Questão3']:<{col5}} {row['Questão4']:<{col6}} {row['Data/Hora']:<{col7}}")
         print('='*100)
 
