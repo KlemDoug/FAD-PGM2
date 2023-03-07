@@ -30,8 +30,8 @@ def Pesquisa():
     print('*'*100)
     sleep(2)
     gravador = csv.writer(arquivar)
-    cabecalho = ['Idade', 'Gênero', 'Questão 1',
-                 'Questão 2', 'Questão 3', 'Questão 4', 'Data e Hora']
+    cabecalho = ['Idade', 'Gênero', 'Questão1',
+                 'Questão2', 'Questão3', 'Questão4', 'Data/Hora']
     gravador.writerow(cabecalho)
     data_e_hora_atuais = datetime.datetime.now()
     data_e_hora_em_texto = data_e_hora_atuais.strftime('%d/%m/%Y, %H:%M')
@@ -134,11 +134,11 @@ def Pesquisa():
 
         # Imprime o cabeçalho das colunas.
         print('='*100)
-        print(f"{'Idade':<{col1}} {'Gênero':<{col2}} {'Questão 1':<{col3}} {'Questão 2':<{col4}} {'Questão 3':<{col5}} {'Questão 4':<{col6}} {'Data e Hora':<{col7}}")
+        print(f"{'Idade':<{col1}} {'Gênero':<{col2}} {'Questão1':<{col3}} {'Questão2':<{col4}} {'Questão3':<{col5}} {'Questão4':<{col6}} {'Data/Hora':<{col7}}")
 
         # Imprime os dados em colunas.
         for row in data:
-            print(f"{row['Idade']:<{col1}} {row['Gênero']:<{col2}} {row['Questão 1']:<{col3}} {row['Questão 2']:<{col4}} {row['Questão 3']:<{col5}} {row['Questão 4']:<{col6}} {row['Data e Hora']:<{col7}}")
+            print(f"{row['Idade']:<{col1}} {row['Gênero']:<{col2}} {row['Questão1']:<{col3}} {row['Questão2']:<{col4}} {row['Questão3']:<{col5}} {row['Questão4']:<{col6}} {row['Data/Hora']:<{col7}}")
         print('='*100)
 
 
