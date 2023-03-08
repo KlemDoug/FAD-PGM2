@@ -191,17 +191,18 @@ Pesquisa()
 
 ### * 8: Censoriamento-teste demonstrativo  ### 
 
-Idade,Gênero,Questão1,Questão2,Questão3,Questão4,Data/Hora
-31,M,S,S,S,S,"07/03/2023, 02:59"
-19,NSR,NSR,S,S,S,"07/03/2023, 02:59"
-45,F,N,N,N,N,"07/03/2023, 02:59"
-50,M,S,N,S,S,"07/03/2023, 02:59"
-29,F,S,S,S,NSR,"07/03/2023, 02:59"
-58,M,S,S,N,S,"07/03/2023, 02:59"
-21,M,NSR,NSR,S,N,"07/03/2023, 02:59"
-63,F,S,S,S,S,"07/03/2023, 02:59"
-42,M,N,N,N,NSR,"07/03/2023, 02:59"
-49,F,NSR,S,S,NSR,"07/03/2023, 02:59"
+|Idade          |Gênero         |Questão1      |Questão2      |Questão3      |Questão4      |Data/Hora        |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |-------------    |
+|31             |M	            |S             |S	          |S	         |S             |07/03/2023, 02:59| 
+|19             |NSR            |NSR           |S	          |S	         |S             |07/03/2023, 02:59|
+|45             |F	            |N             |N	          |N	         |N             |07/03/2023, 02:59|
+|50             |M	            |S             |N	          |S	         |S             |07/03/2023, 02:59|
+|29             |F	            |S             |S	          |S	         |NSR           |07/03/2023, 02:59|
+|58             |M	            |S             |S	          |N	         |S             |07/03/2023, 02:59|
+|21             |M	            |NSR           |NSR	          |S	         |N             |07/03/2023, 02:59|
+|63             |F	            |S             |S	          |S	         |S             |07/03/2023, 02:59|
+|42             |M	            |N             |N	          |N	         |NSR           |07/03/2023, 02:59|
+|49             |F	            |NSR           |S	          |S	         |NSR           |07/03/2023, 02:59|
 
 
 <sub>***Seguindo as propostas do projeto, guardamos entrevistas simuladas com o intuito de mostrar como o arquivo CSV pode ser manipulado, uma vez que é gerado direto pelo interpretador e, depois, aberto e tratado pelo Excel.***</sub>
