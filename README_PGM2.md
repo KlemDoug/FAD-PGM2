@@ -205,7 +205,7 @@ Pesquisa()
 |49             |F	            |NSR           |S	          |S	         |NSR           |07/03/2023, 02:59|
 
 
-<sub>***Seguindo as propostas do projeto, guardamos entrevistas simuladas com o intuito de mostrar como o arquivo CSV pode ser manipulado, uma vez que é gerado direto pelo interpretador e, depois, aberto e tratado pelo Excel.***</sub>
+<sub>***Seguindo as propostas do projeto, guardamos entrevistas simuladas com o intuito de mostrar como o arquivo CSV pode ser manipulado, uma vez que é gerado direto pelo interpretador e, depois, aberto e tratado pelo Excel via Power Query.***</sub>
 
 
 
